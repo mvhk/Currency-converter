@@ -4,30 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript Currency Converter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
 
 <body>
-
-    <div class="container">
-        <div class="currency">
-            <select id="from_currency">
+    <h1 class="text-center">Currency Converter</h1>
+    <div class="container jumbotron ">
+        <div class="currency row form-group ">
+            <select class="form-control col-2 mr-2" id="from_currency">
                 <option value="USD">USD</option>
                 <option value="INR">INR</option>
             </select>
-            <input type="number" id="from_ammount" placeholder="0" value=1 />
+            <input class="form-control col-6" type="number" id="from_ammount" placeholder="0" value=1 />
         </div>
         <div class="middle">
             <button id="exchange">
-                <i class="fas fa-exchange-alt"></i>
+                &#8693;
             </button>
-            <div class="rate" id="rate"></div>
+            <div class="rate mb-3" id="rate"></div>
         </div>
-        <div class="currency">
-            <select id="to_currency">
+        <div class="currency  row form-group">
+            <select class="form-control  col-2 mr-2" id="to_currency">
                 <option value="INR">INR</option>
                 <option value="USD">USD</option>
             </select>
-            <input type="number" id="to_ammount" placeholder="0" />
+            <input class="form-control col-6" type="number" id="to_ammount" placeholder="0" />
         </div>
     </div>
     <script src="function.js"></script>
